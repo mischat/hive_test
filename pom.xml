@@ -4,7 +4,7 @@
   <groupId>com.jointhegrid</groupId>
   <artifactId>hive_test</artifactId>
   <name>hive_test</name>
-  <version>4.0.0-SNAPSHOT</version>
+  <version>3.1.0-SNAPSHOT</version>
   <description></description>
   <packaging>jar</packaging>
 	
@@ -14,61 +14,61 @@
     <dependency>
       <groupId>org.apache.hive</groupId>
       <artifactId>hive-anttasks</artifactId>
-      <version>0.9.0</version>
+      <version>0.8.1</version>
     </dependency>
     <dependency>
       <groupId>org.apache.hive</groupId>
       <artifactId>hive-cli</artifactId>
-      <version>0.9.0</version>
+      <version>0.8.1</version>
     </dependency>
     <dependency>
       <groupId>org.apache.hive</groupId>
       <artifactId>hive-common</artifactId>
-      <version>0.9.0</version>
+      <version>0.8.1</version>
     </dependency>
     <dependency>
       <groupId>org.apache.hive</groupId>
       <artifactId>hive-contrib</artifactId>
-      <version>0.9.0</version>
+      <version>0.8.1</version>
     </dependency>
     <dependency>
       <groupId>org.apache.hive</groupId>
       <artifactId>hive-exec</artifactId>
-      <version>0.9.0</version>
+      <version>0.8.1</version>
     </dependency>
     <dependency>
       <groupId>org.apache.hive</groupId>
       <artifactId>hive-metastore</artifactId>
-      <version>0.9.0</version>
+      <version>0.8.1</version>
     </dependency>
     <dependency>
       <groupId>org.apache.hive</groupId>
       <artifactId>hive-serde</artifactId>
-      <version>0.9.0</version>
+      <version>0.8.1</version>
     </dependency>
     <dependency>
       <groupId>org.apache.hive</groupId>
       <artifactId>hive-service</artifactId>
-      <version>0.9.0</version>
+      <version>0.8.1</version>
     </dependency>
 		
     <dependency>
       <groupId>org.apache.hive</groupId>
       <artifactId>hive-shims</artifactId>
-      <version>0.9.0</version>
+      <version>0.8.1</version>
     </dependency>
 
     <dependency>
       <groupId>org.apache.hive</groupId>
       <artifactId>hive-builtins</artifactId>
-      <version>0.9.0</version>
+      <version>0.8.1</version>
     </dependency>
 
 
     <dependency>
       <groupId>org.apache.hadoop</groupId>
       <artifactId>hadoop-core</artifactId>
-      <version>0.20.2</version>
+      <version>0.20.205.0</version>
       <scope>provided</scope>
     </dependency>
         
@@ -87,7 +87,7 @@
     <dependency>
       <groupId>org.apache.hadoop</groupId>
       <artifactId>hadoop-test</artifactId>
-      <version>0.20.2</version>
+      <version>0.20.205.0</version>
       <scope>provided</scope>
     </dependency>
 
@@ -191,8 +191,8 @@
         <plugin>
           <configuration>
             <serverId>apache-main</serverId>
-            <url>http://www.apache.org/dist/hadoop/common/hadoop-0.20.2</url>
-            <fromFile>hadoop-0.20.2.tar.gz</fromFile>
+            <url>https://archive.apache.org/dist/hadoop/core/hadoop-0.20.205.0/</url>
+            <fromFile>hadoop-0.20.205.0.tar.gz</fromFile>
             <toDir>${project.build.directory}/hadoop</toDir>
           </configuration>
                                       
@@ -218,7 +218,7 @@
             <executable>tar</executable>
             <arguments>
               <argument>-xf</argument>
-              <argument>${project.build.directory}/hadoop/hadoop-0.20.2.tar.gz</argument>
+              <argument>${project.build.directory}/hadoop/hadoop-0.20.205.0.tar.gz</argument>
               <argument>-C</argument>
               <argument>${project.build.directory}</argument>
             </arguments>
@@ -255,11 +255,14 @@
       </plugins>
     </pluginManagement>
   </build>
+<!--
   <repositories>
     <repository>
       <id>riptano</id>
       <url>http://mvn.riptano.com/content/repositories/snapshots</url>
     </repository>
-
   </repositories>
+-->
+
+
 </project>
